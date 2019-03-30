@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+#map {
+    height: 425px;
+}
+
+
+#description {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#infowindow-content .title {
+    font-weight: bold;
+}
+
+#infowindow-content {
+    display: none;
+}
+
+#map #infowindow-content {
+    display: inline;
+}
+
+.pac-card {
+    margin: 10px 10px 0 0;
+    border-radius: 2px 0 0 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    font-family: Roboto;
+}
+
+#pac-container {
+    padding-bottom: 12px;
+    margin-right: 12px;
+}
+
+.pac-controls {
+    display: inline-block;
+    padding: 5px 11px;
+}
+
+.pac-controls label {
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#pac-input {
+    background-color: #fff;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 12px;
+    padding: 0 11px 0 13px;
+    text-overflow: ellipsis;
+    width: 400px;
+}
+
+#pac-input:focus {
+    border-color: #4d90fe;
+}
+
+#title {
+    color: #fff;
+    background-color: #4d90fe;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 6px 12px;
+}
+
+#target {
+    width: 345px;
+}
+
+@font-face{
+    src: url('fonts/leaguespartan-bold.ttf');
+    font-family: 'primaryfont'
+}
+
+@font-face{
+    src: url('fonts/proxima.ttf');
+    font-family: 'secondaryfont';
+}
+html{
+    height:100%;
+}
+body{
+    background:black;
+    height: 100%;
+    text-align: center;
+    font-family: 'secondaryfont';
+    font-size:1.3rem;
+    color: white;
+}
+.primary{
+    font-size: 2rem;
+    font-family: 'primaryfont';
+    padding: 1.5rem;
+}
+.primary1{
+    font-size: 1.5rem;
+    font-family: 'primaryfont';
+    padding: 1rem;
+}
+.fit{
+    margin-top: 1rem;
+    padding: 1.5rem;
+}
+.black{ color: black;background: white;padding: 0.3rem;font-size: 1.7rem;};
+a:hover{
+    text-decoration: none;
+}
+.extend{
+    width: 100%;
+}
+
+.modal-content{
+    z-index: 1;
+    min-height: 100vh;
+}
+
+.centerme{
+    width: 90%;
+    z-index: 2;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+
+.spotifyme{
+    background:#1ed760!important;
+    border: none;
+    font-size: 1.4rem;
+    font-family: 'primaryfont';
+}
+
+button.spotifyme{
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+button.spotifyme:hover .move{
+    animation:slup 0.7s;
+    -webkit-animation:slup 0.7s;
+}
+
+@keyframes slup{
+    0%{
+        transform: translateX(0px)    ;
+        -webkit-transform: translateX(0px)    ;
+        -moz-transform: translateX(0px)    ;
+        -ms-transform: translateX(0px)    ;
+        -o-transform: translateX(0px)    ;
+}
+    50%{
+        transform: translateX(20px)    ;
+        -webkit-transform: translateX(20px)    ;
+        -moz-transform: translateX(20px)    ;
+        -ms-transform: translateX(20px)    ;
+        -o-transform: translateX(20px)    ;
+}
+100%{
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+}
+}
+.progress-bar{
+    background: #1ed760!important;
+}
+.progress{
+    margin-bottom: 1rem;
+}
+
+.card{
+   position: relative;
+   box-shadow: 0 0 10px 0 rgba(0,0,0,.15);
+   padding:24px;
+   width: 322px;
+   margin-bottom: 1rem;
+   margin-left: 1rem;
+   margin-left: 1rem;
+   padding-bottom:100px;
+   transition: 0.5s all;
+   -webkit-transition: 0.5s all;
+   -moz-transition: 0.5s all;
+   -ms-transition: 0.5s all;
+   -o-transition: 0.5s all;
+}
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.wrapper{
+    width: 65%;
+    margin: 0 auto;
+}
+.wrap{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card h4{
+    position: absolute;
+    bottom:5px;
+    left: 5%;
+}
